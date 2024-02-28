@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/bc0d876b43.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Driver Availabilty</title>
+</head>
+<style>
+           .Nav {
+          margin-bottom: 12px;
+          font-size: large;
+          font-weight: bold;
+       }
+
+        .reorder {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: red;
+           position: fixed;
+           top: 0;
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           height:70px
+        }
+
+.left {
+  margin-right: auto; 
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.title) {
+  background-color:#bae5fe ;
+  color:black;
+}
+
+/* .title {
+  background-color: #1ab984;
+  color:#000;
+  padding: 14px 16px;
+  margin: 0;
+} */
+.pop{
+  font-size:20px;
+  color:black;
+  text-decoration: none;
+  padding: 20px;
+ }
+
+
+     table{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    }
+   td,th { 
+    border: 1px solid #ddd;
+    padding: 10px;
+    }
+    #data-table{ 
+        font-family: Arial,Helvetica, sans-serif; 
+        border-collapse: collapse;
+    }
+    #data-table tr:nth-child(even){ 
+        background-color: #79c0bd; color:#000;
+     }
+    #data-table tr:nth-child(odd){ 
+        background-color: #45A29E;
+     }
+    #data-table tr:hover{ 
+        background-color: #b5d0eb; 
+    }
+    #data-table th { 
+                padding-top: 12px;
+                padding-bottom: 12px; 
+                text-align:center; 
+                background-color:  #ef9c51; 
+                color:black; 
+            }
+            
+
+    .cen{
+      border: 2px solid black;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    background-color:#bae5fe;
+    }
+    .cen-down{
+      display: flex;
+      justify-content:center;
+      padding-bottom: 100px
+    }
+    
+    
+    footer{
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            background-color:red;
+            width: 100%;
+            position: relative;
+           margin-top: 70px;
+         }
+        .footerclass{
+            color: black;
+            font-size: large;
+            font-weight: 500;
+
+         }
+
+</style>
+<body style="margin: 0;">
+  <nav class="Nav">
+    <ul class="reorder">
+      <li class="left">
+        <img src="40 - PNG emergency copy.jpg" alt="logo" style="width:150px;">
+      </li>
+      <li class="right">
+        <a href="index.html" class="pop">Home</a>
+        <i class="fa-solid fa-caret-down" style="color: #050505;"></i>
+        <a href="contact.html" class="pop">Contact</a>
+        <i class="fa-solid fa-caret-down" style="color: #050505;"></i>
+        <a href="service.html" class="pop">Services</a>
+        <i class="fa-solid fa-caret-down" style="color: #050505;"></i>
+      </li>
+    </ul>
+  </nav>
+
+
+<div class="cen">
+  <h1 style="text-align: center;">Driver Availabilty Table</h1>
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Shift</th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table><br>
+  <div class="cen-down">
+  <a href="index.html"><button style="padding:10px;background-color: red;font-size: larger;font-weight: bold;cursor: pointer;"><i class="fa-solid fa-arrow-left" style="color: #050505;"></i>Back</button></a>
+  </div>
+</div>
+
+  <footer>
+    <div class="footerclass">
+    <h3>Copyright &copy; Ambulance Booking 2023</h3>
+    <a href="mailto:ambulancebooking@gmail.com" style="text-decoration: none;color: #050505;">ambulancebooking@example.com</a>
+    </div>
+  </footer>
+
+  <script src="tablescript.js"></script>
+
+</body>
+</html>

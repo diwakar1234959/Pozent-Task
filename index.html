@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc0d876b43.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Ambulance Booking</title>
+    <style>
+        
+        .Nav {
+          margin-bottom: 12px;
+          font-size: large;
+          font-weight: bold;
+       }
+
+        .reorder {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: red;
+           position: fixed;
+           top: 0;
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           height:70px
+        }
+
+.left {
+  margin-right: auto; 
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.title) {
+  background-color:#bae5fe ;
+  color:black;
+}
+
+/* .title {
+  background-color: #1ab984;
+  color:#000;
+  padding: 14px 16px;
+  margin: 0;
+} */
+.pop{
+  font-size:20px;
+  color:black;
+  text-decoration: none;
+  padding: 20px;
+ }
+
+
+        .main{
+          
+         background-color:#bae5fe;
+         /* text-align: center;    */
+            font-size: larger;
+            padding: 20px;
+            border: 2px solid black;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+        .main-down{
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+
+        footer{
+            /* left: 0;
+            bottom: 0; */
+            text-align: center;
+            background-color:red;
+            width: 100%;
+            position: absolute;
+           /* margin-top: 500px; */
+         }
+        .footerclass{
+            color: black;
+            font-size: large;
+            font-weight: 500;
+
+         }
+
+         
+         
+
+        
+
+    </style>
+</head>
+<body style="margin: 0;">
+    <nav class="Nav">
+        <ul class="reorder">
+          <li class="left">
+            <img src="40 - PNG emergency copy.jpg" alt="logo" style="width:150px;">
+          </li>
+          <li class="right">
+            <a href="index.html" class="pop">Home</a>
+            <i class="fa-solid fa-caret-down" style="color: #050505;"></i>
+            <a href="contact.html" class="pop">Contact</a>
+            <i class="fa-solid fa-caret-down" style="color: #050505;"></i>
+            <a href="service.html" class="pop">Services</a>
+            <i class="fa-solid fa-caret-down" style="color: #050505;"></i>
+          </li>
+        </ul>
+      </nav>
+    
+
+    <div class="main">
+        <h1 style="text-align: center;">Ambulance Booking</h1><hr>
+        <form>
+            <h2>Patient Information</h2>
+            <label for="fname">Patient name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your Fullname"><br><br>
+            <label for="Dob">Date of Birth:</label>
+            <input type="date" id="date" name="date"><br><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="gender" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender">
+            <label for="Female">Female</label>
+            <input type="radio" id="gender" name="gender">
+            <label for="Others">Others</label>
+            <h3>Patient Address</h3>
+            <label for="street">Street Address</label><br>
+            <input type="text" id="address" name="address" placeholder="Enter your Address"><br><br>
+            <label for="State">State</label><br>
+            <input type="text" id="state" name="state" placeholder="Enter your State"><br><br>
+            <label for="City">City</label><br>
+            <input type="text" id="city" name="city" placeholder="Enter your City"><br><br>
+            <label for="Pin">Postal/Zipcode</label><br>
+            <input type="number" id="Pin" name="Pin" placeholder="Enter your Pincode"><br><br>
+            <label for="driver">Ambulance Captain</label><br>
+            <select name="driver" id="driver">
+                <option value="Driver1">Mani</option>
+                <option value="Driver2">Sam</option>
+                <option value="Driver3">Das</option>
+            </select>
+            <h3>Ward Details</h3>
+            <label for="ward">Ward No:</label>
+                <select name="Ward" id="Ward">
+                         <option value="Ward1">Ward 1</option>
+                         <option value="Ward2">Ward 2</option>
+                 </select>
+                 <br><br>
+                 <input type="submit" value="Submit" style="background-color: red;font-size: large;font-weight: bold;cursor: pointer; ">
+
+        </form><br>
+        <div class="main-down">
+        <a href="driversList.html"><button style="background-color: red;font-size: large;font-weight: bold;cursor: pointer;">Check For Driver Availabilty <i class="fa-solid fa-arrow-right" style="color: #050505;"></i></button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerclass">
+        <h3>Copyright &copy; Ambulance Booking 2023</h3>
+        <a href="mailto:ambulancebooking@gmail.com" style="text-decoration: none;color: #050505;">ambulancebooking@example.com</a>
+    </div>
+    </footer>
+    
+    
+</body>
+</html>
